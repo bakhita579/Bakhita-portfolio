@@ -22,8 +22,8 @@ const projects = [
     }
 ];
 
-const container = document.getElementById("project-wrapper");
-if (container) {
+const projectList = document.getElementById("project-wrapper");
+if (projectList) {
     projects.forEach((project) => {
         const card = document.createElement("div");
         card.className = "card";
@@ -38,6 +38,6 @@ if (container) {
         card.appendChild(descEL);
         card.appendChild(techEL);
 
-        container.appendChild(card);
+        projectList.appendChild(card);
     });
 }
