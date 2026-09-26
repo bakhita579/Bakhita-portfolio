@@ -1,0 +1,54 @@
+body{
+    background-color: azure;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: medium;
+
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(red, green, blue, alpha);
+    border-radius: 6px;
+    margin-bottom: 20px;
+   
+}
+nav a{
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: lighter;
+    font-size: 18px;
+}
+nav a:hover{
+    text-decoration: underline;
+
+}
+ul{
+    list-style-type: circle;
+    padding-left: 20px;
+    color: #6b46f3;
+
+}
+h2{
+    font-size: x-large;
+    color: #f00707;
+
+}
+#project-wrapper{
+    font-size: medium;
+    font-weight: 300;
+    color: #050505;
+}
+.email-box{
+    background-color: rgb(9, 243, 243);
+           width: 300px;
+           height: 50px;
+           padding: 15px 20px 25px 30px;
+           border: #050505;
+           border-color: #050505;
+           border-width: 30px;
+
+
+}
