@@ -22,10 +22,9 @@ const projects = [
     }
 ];
 
-const projectsList = document.getElementById("project-wrapper");
-
-if (projectsList) {
-    for (const project of projects) {
+const container = document.getElementById("project-wrapper");
+if (container) {
+    projects.forEach((project) => {
         const card = document.createElement("div");
         card.className = "card";
         const titleEL = document.createElement("h3");
@@ -34,13 +33,11 @@ if (projectsList) {
         descEL.textContent = project.description;
         const techEL = document.createElement("span");
         techEL.className = "tag";
-        techEL.textContent = project.take
-        item.textContent = `${project.title}: ${project.description} (${project.tech})`;
+        techEL.textContent = project.tech;
         card.appendChild(titleEL);
         card.appendChild(descEL);
         card.appendChild(techEL);
 
-        projectsList.appendChild(card);
-
-    }
+        container.appendChild(card);
+    });
 }
