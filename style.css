@@ -52,3 +52,7 @@ h2{
 
 
 }
+section{
+    scroll-behavior: smooth;
+    
+}
